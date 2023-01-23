@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;
+}
+/*banner image*/
+body {
+    background: url("images_cpo/BannerHomeCPO.jpg") no-repeat;
+    background-size: 100%;
+}
+/*size and transparent logo*/
+.logo {
+    background: transparent;
+    height: 8%;
+    width: 15%;
+}
+/*style header*/
+.header {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.btn {
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    padding: 4px 5px;
+    margin-left: 15px;
+}
+/*style nav*/
+.menu {
+    overflow: hidden;
+}
+.menu a {
+    float: right;
+    display: inline;
+    color: white;
+    padding: 20px 10px;
+}
+.menu a:hover {
+    color: orange;
+}
+/*style pan 1*/
+.bodypan1 {
+    overflow: hidden;
+    display: block;
+    margin-left: 40px;
+}
+/*text of pan 1*/
+.bodypan1 .bodycontent{
+    float: left;
+    font-size: 25px;
+    line-height: 0.1;
+    width: 35%;
+    text-align: left;
+    position: relative;
+}
+.bodycontent t {
+    color: black;
+}
+.bodypan1 .image {
+    width: 35%;
+    text-align: center;
+    position: relative;
+}
+/*style pan 2*/
+.bodypan2 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+.box {
+    background-color: orangered;
+    background-image: linear-gradient(to bottom right, orangered, orange);
+    border: none;
+    margin: 1px 0.1px;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    border-radius: 5px;
+}
+.box .bcontent {
+    padding: 40px 15px;
+    text-align: center;
+    color: white; 
+    font-size: 13px;
+    display: block;
+}
+.bodypan2 .box:hover {
+    width: 190px;
+    height: 190px;
+}
+/*style footer*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    float: left;
+}
+.fcontent {
+    display: inline-flex;
+}
+.fcontent .container {
+    display: inline-block;
+    padding-left: 150px;
+}
+.fcontent .container t {
+    display: block;
+    color: white;
+    line-height: 1.5;
+}
+.fcontent .container t:hover {
+    color: orange;
+}
+/*clear float after the columns*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*responsive layout*/
+@media screen and (max-width: 80%) {
+    .bodypan1, .bodypan2 {
+        width: auto;
+        float: none;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="images_cpo/LogoHanwhaLifeWhite.png" alt="logo">
+    <div class="btn" style="float: right;">
+        <a><i class="fa fa-sign-in" style="color: orange;"></i>Đăng nhập</a>
+    </div>
+    <div class="btn" style="float: right;">
+        <a><i class="fa fa-phone" style="color: orange;"></i>1900-55-55-22</a>
+    </div>  
+</div>
+<div class="menu">
+    <a>LIÊN HỆ</a>
+    <a>CHỨC NĂNG</a>
+    <a>VỀ HANWHALIFE</a>
+</div>
+<div class="bodypan1">
+    <div class="bodycontent">
+        <p style="color: black;"><b>Chào Mừng Quý Khách</b></p>
+        <p style="color: orange;"><b><t>đến với</t> Cổng Thông Tin Khách Hàng</b></p>
+        <p style="color: orange;"><b>Hanwha Life Việt Nam</b></p>
+    </div>
+    <div class="image">
+        <img src="images_cpo/Apple.png" alt="app-store" style="height: 25%; width: 35%;">
+        <img src="images_cpo/Google.png" alt="gg-play" style="height: 25%; width: 35%;">
+    </div>
+    <div class="image">
+        <img src="images_cpo/LIME_.png" alt="qr-code" style="height: 30%; width: 35%;">
+    </div>
+</div>
+<div class="bodypan2">
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO1.png" alt="help" style="height: 50px; width: 50px;">
+            <p>TRUY VẤN THÔNG TIN HỢP ĐỒNG</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO2.png" alt="return value" style="height: 50px; width: 50px;">
+            <p>YÊU CẦU TẠM ỨNG GIÁ TRỊ HOÀN LẠI</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO3.png" alt="currency1" style="height: 50px; width: 50px;">
+            <p>YÊU CẦU GIẢI QUYẾT QUYỀN LỢI DÀNH CHO BÊN MUA BẢO HIỂM</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO3.png" alt="currency2" style="height: 50px; width: 50px;">
+            <p>YÊU CẦU GIẢI QUYẾT QUYỀN LỢI BẢO HIỂM (DÀNH CHO KHÁCH HÀNG CHƯA CÓ TÀI KHOẢN)</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO3.png" alt="currency2" style="height: 50px; width: 50px;">
+            <p>THANH TOÁN ONLINE (DÀNH CHO KHÁCH HÀNG CHƯA CÓ TÀI KHOẢN)</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/qrcode.png" alt="qrcode" style="height: 50px; width: 50px;">
+            <p>THANH TOAN QRCODE</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="bcontent">
+            <img src="images_cpo/IconCPO3.png" alt="currency4" style="height: 50px; width: 50px;">
+            <p>CÔNG CỤ HỖ TRỢ PHÂN BỔ TỈ LỆ ĐẦU TƯ</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="fcontent">
+        <img class="logo" src="images_cpo/logo.png" alt="footerlogo">   
+        <div class="container">    
+            <t style="color: orange;">VỀ HANWHA LIFE</t>
+            <t>Giới thiệu công ty</t>
+            <t>Lời chào TGĐ</t>
+            <t>Tầm nhìn & Sứ mệnh</t>
+            <t>Cột mốc</t>
+        </div> 
+        <div class="container">  
+            <t style="color: orange;">SẢN PHẨM</t>
+            <t>An Khang Phúc Lộc</t>
+            <t>An Khang Tài Lộc</t>
+            <t>An Khang Toàn Gia</t>
+            <t>An Khang Học Vấn</t>
+        </div>
+        <div class="container">             
+            <t style="color: orange;">DỊCH VỤ KHÁCH HÀNG</t>
+            <t>Thanh toán phí</t>
+            <t>Giải quyết quyền lợi bảo hiểm</t>
+            <t>Chương trình chăm sóc Khách hàng đặc biệt</t>
+            <t>Quy định đánh giá nằm viện</t>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
